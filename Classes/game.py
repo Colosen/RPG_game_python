@@ -1,6 +1,6 @@
 import random
-from .magic import Spell
-import pprint
+from Classes.magic import Spell
+
 
 class bcolors:
     HEADER = '\033[95m'
@@ -11,6 +11,7 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
 
 class Person:
     def __init__(self, hp, mp, atk, df, magic):
@@ -66,10 +67,4 @@ class Person:
         for spell in self.magic:
             print(str(i) + ":", spell.name, "(cost:", str(spell.cost) + ")")
             i += 1
-
-
-
-
-
-
 
